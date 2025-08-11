@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
   <diagram name="Страница — 1" id="yojgwKywdg1i8IU8_6Fm">
-    <mxGraphModel dx="1500" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1281" dy="668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -395,7 +395,7 @@
         <mxCell id="kRf5InseIL7dYyA1KGaL-136" value="множество арендаторов может составить&amp;nbsp;&lt;div&gt;множество заявок&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="850" y="160" width="260" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ElRaMWHxmPoETTOg04hM-5" value="Недвижимость - Договоры&amp;nbsp; 1-1&lt;div&gt;Арендаторы-Договоры&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1-М&lt;/div&gt;&lt;div&gt;Заявки-Арендаторы&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; М-М&lt;/div&gt;&lt;div&gt;Недвижимость-Заявки&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 1-М&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="ElRaMWHxmPoETTOg04hM-5" value="Недвижимость - Договоры&amp;nbsp; 1-1&lt;div&gt;Арендаторы-Договоры&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;1-М&lt;/div&gt;&lt;div&gt;Заявки-Арендаторы&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; М-М&lt;/div&gt;&lt;div&gt;Недвижимость-Заявки&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 1-М&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="940" y="610" width="200" height="70" as="geometry" />
         </mxCell>
       </root>
