@@ -6,12 +6,13 @@
 -- ● общее количество заказов,
 -- ● общую сумму заказов,
 -- ● страну проживания.
-SELECT
-  first_name || ' ' || last_name AS full_name, country,
-  (SELECT COUNT(*) FROM orders WHERE orders.customer_id = customers.customer_id) AS total_orders,
-  (SELECT SUM(amount) FROM orders WHERE orders.customer_id = customers.customer_id) AS total_amount
-FROM customers
-WHERE customer_id IN (
-  SELECT customer_id FROM orders GROUP BY customer_id HAVING COUNT(*) >= 2)
-AND customer_id IN (
-  SELECT customer FROM shippings WHERE status = 'Delivered');
+select first_name || ' ' || last_name AS full_name, country,
+  COUNT(order_id) AS total_orders,
+  SUM(amount) AS total_amount
+FROM customers 
+JOIN orders ON orders.customer_id = customers.customer_id
+JOIN shippings ON shippings.customer = customers.customer_id AND shippings.status = 'Delivered'
+GROUP BY customers.customer_id, first_name, last_name, country
+HAVING COUNT(order_id) >= 2;
+
+
