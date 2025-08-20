@@ -10,12 +10,9 @@ ALTER TABLE Employees
 ADD COLUMN Email VARCHAR(100);
 
 --Добавить ограничение UNIQUE к столбцу Email в таблице Employees, предварительно заполнив любыми значениями
-UPDATE Employees SET Email = 'alice@gmail.com' WHERE EmployeeID = 1;
-UPDATE Employees SET Email = 'bob@gmail.com' WHERE EmployeeID = 2;
-UPDATE Employees SET Email = 'charlie@gmail.com' WHERE EmployeeID = 3;
-UPDATE Employees SET Email = 'eve@gmail.com' WHERE EmployeeID = 5;
-UPDATE Employees SET Email = 'anya@gmail.com' WHERE EmployeeID = 6;
-UPDATE Employees SET Email = 'kate@gmail.com' WHERE EmployeeID = 7;
+UPDATE Employees
+SET Email = LOWER(FirstName || EmployeeID || '@gmail.com')
+WHERE Email IS NULL;
 
 SELECT EmployeeID, Email FROM Employees;
 
