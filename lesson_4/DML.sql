@@ -20,8 +20,12 @@ SET Salary = 65000.00
 WHERE FirstName = 'Alice' AND LastName = 'Smith';
 
 -- 5️ Удаление сотрудника с фамилией Prince
-DELETE FROM EmployeeProjects 
-WHERE EmployeeID = 4;
+DELETE FROM EmployeeProjects
+WHERE EmployeeID = (
+    SELECT EmployeeID
+    FROM Employees
+    WHERE LastName = 'Prince'
+);
 DELETE FROM Employees 
 WHERE LastName = 'Prince'; 
 
