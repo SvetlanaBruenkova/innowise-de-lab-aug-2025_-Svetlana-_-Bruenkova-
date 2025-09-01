@@ -2,7 +2,6 @@
 import random
 
 n = random.randint(1, 10)
-print("secret_number =", n)
 
 while True:
     a = int(input("Угадай число от 1 до 10: "))
