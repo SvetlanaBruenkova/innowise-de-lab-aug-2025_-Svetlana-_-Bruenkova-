@@ -4,5 +4,5 @@ def add_vat(price):
     return price + price * nds
 prices = [1000, 3499, 250]
 for price in prices:
-    final_price = [add_vat(p) for p in prices]
-print(f"Цена с НДС: {final_price}")
+    final_price = add_vat(price)
+    print(f"Цена с НДС: {final_price}")
